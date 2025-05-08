@@ -108,10 +108,14 @@
       <input type="email" name="email" placeholder="Seu email" required>
       <textarea name="mensagem" rows="5" placeholder="Descreva o propósito do seu contacto" required></textarea>
 
-      <div class="consentimento" style="margin-bottom: 15px;">
-  <label style="display: flex; align-items: center; white-space: nowrap;">
-    <input type="checkbox" name="consentimento" required style="margin-right: 10px;">
-    Autorizo o contacto por parte da empresa e aceito os <a href="#" target="_blank">Termos e Condições</a>.
+     
+ <div class="consentimento" style="margin-bottom: 15px;">
+  <label style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+    <input type="checkbox" name="consentimento" required style="flex-shrink: 0;">
+    <span style="white-space: nowrap;">
+      Autorizo o contacto por parte da empresa e aceito os 
+      <a href="#" target="_blank" style="color: #ef4d20; text-decoration: underline;">Termos e Condições</a>.
+    </span>
   </label>
 </div>
 
