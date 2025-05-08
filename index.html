@@ -109,11 +109,14 @@
       <textarea name="mensagem" rows="5" placeholder="Descreva o propósito do seu contacto" required></textarea>
 
       <div class="consentimento">
-        <label>
-          <input type="checkbox" name="consentimento" required>
-          Autorizo o contacto por parte da empresa e aceito os <a href="#" target="_blank">Termos e Condições</a>.
-        </label>
-      </div>
+  <label style="display: flex; align-items: center;">
+    <input type="checkbox" name="consentimento" required style="margin-right: 10px;">
+    <span>
+      Autorizo o contacto por parte da empresa e aceito os
+      <a href="#" target="_blank">Termos e Condições</a>.
+    </span>
+  </label>
+</div>
 
       <button type="submit">Enviar Pedido</button>
     </form>
