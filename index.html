@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+
+      background-image:
+        linear-gradient(135deg, #ef4d20, #f1f1f1),
+        url('https://www.transparenttextures.com/patterns/triangle-mosaic.png');
+      background-repeat: repeat;
+      background-size: cover, 150px 150px;
+      background-position: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 20px;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .logo {
+      max-width: 250px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ef4d20;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .consentimento {
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .consentimento input {
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: #ef4d20;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c93e17;
+    }
+
+    .return-btn {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .return-btn a {
+      text-decoration: none;
+    }
+
+    .return-btn button {
+      background-color: #6c757d;
+    }
+
+    .return-btn button:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://raw.githubusercontent.com/acidjx/formulariocontactop2g/main/LOGO-PERFECT2GETHER-SHORT.png" alt="Logotipo da Empresa" class="logo">
+
+  <div class="container">
+    <h2>Pedido de Contacto</h2>
+    <form action="#" method="post">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="mensagem" rows="5" placeholder="Descreva o propósito do seu contacto" required></textarea>
+
+      <div class="consentimento">
+        <label>
+          <input type="checkbox" name="consentimento" required>
+          Autorizo o contacto por parte da empresa e aceito os <a href="#" target="_blank">Termos e Condições</a>.
+        </label>
+      </div>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <div class="return-btn">
+      <a href="https://seusite.canva.site">
+        <button>Voltar à Página Inicial</button>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
