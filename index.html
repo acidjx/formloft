@@ -5,8 +5,9 @@
   <title>Formulário de Contacto</title>
   <style>
     body {
-      font-family: Arial;
+      font-family: Arial, sans-serif;
 
+      /* Novo gradiente + padrão triangular externo */
       background-image:
         linear-gradient(135deg, #ef4d20, #f1f1f1),
         url('https://www.transparenttextures.com/patterns/triangle-mosaic.png');
@@ -53,16 +54,6 @@
       font-size: 16px;
     }
 
-    .consentimento {
-      margin-bottom: 15px;
-      font-size: 14px;
-      color: #333;
-    }
-
-    .consentimento input {
-      margin-right: 10px;
-    }
-
     button {
       background-color: #ef4d20;
       color: white;
@@ -99,7 +90,7 @@
 </head>
 <body>
 
-  <img src="https://raw.githubusercontent.com/acidjx/formloft/refs/heads/main/Imagem1.png" alt="Logotipo da Empresa" class="logo">
+  <img src="https://raw.githubusercontent.com/acidjx/formulariocontactop2g/main/LOGO-PERFECT2GETHER-SHORT.png" alt="Logotipo da Empresa" class="logo">
 
   <div class="container">
     <h2>Pedido de Contacto</h2>
@@ -107,17 +98,6 @@
       <input type="text" name="nome" placeholder="Seu nome" required>
       <input type="email" name="email" placeholder="Seu email" required>
       <textarea name="mensagem" rows="5" placeholder="Descreva o propósito do seu contacto" required></textarea>
-
-     
- <div class="consentimento" style="margin-bottom: 15px;">
-  <label style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-    <input type="checkbox" name="consentimento" required style="flex-shrink: 0;">
-    <span style="white-space: nowrap;">
-      Autorizo o contacto por parte da empresa e aceito os<a href="#" target="_blank" style="color: #ef4d20; text-decoration: underline;">Termos e Condições</a>.
-    </span>
-  </label>
-</div>
-
       <button type="submit">Enviar Pedido</button>
     </form>
 
@@ -130,4 +110,5 @@
 
 </body>
 </html>
+
 
