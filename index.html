@@ -2,31 +2,32 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Contacto</title>
   <style>
-    body {
-      font-family: Arial;
+    * {
+      box-sizing: border-box;
+    }
 
-      /* Novo gradiente + padrão triangular externo */
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
       background-image:
         linear-gradient(135deg, #ef4d20, #f1f1f1),
-      <img src="https://www.transparenttextures.com/patterns/triangle-mosaic.png">;
+        url('https://www.transparenttextures.com/patterns/triangle-mosaic.png');
       background-repeat: repeat;
       background-size: cover, 150px 150px;
       background-position: center;
-
-      .background-image{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 40px 20px;
       min-height: 100vh;
-      margin: 0;
     }
 
     .container {
-      background-color: #ffffff;
+      background-color: #fff;
       padding: 30px 40px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -35,15 +36,16 @@
     }
 
     .logo {
-      max-width: 250px;
+      max-width: 280px;
       margin: 0 auto 20px;
       display: block;
     }
 
     h2 {
       text-align: center;
-      margin-bottom: 25px;
       color: #ef4d20;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
     }
 
     input, textarea {
@@ -52,7 +54,35 @@
       margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .consentimento {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .consentimento input[type="checkbox"] {
+      flex-shrink: 0;
+      transform: scale(1.1);
+    }
+
+    .consentimento span {
+      flex: 1;
+    }
+
+    .consentimento a {
+      color: #ef4d20;
+      text-decoration: underline;
     }
 
     button {
@@ -62,7 +92,7 @@
       width: 100%;
       border: none;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s ease;
     }
@@ -87,11 +117,25 @@
     .return-btn button:hover {
       background-color: #5a6268;
     }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      input, textarea, button {
+        font-size: 0.95rem;
+      }
+
+      .consentimento {
+        font-size: 0.85rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <img src="https://raw.githubusercontent.com/acidjx/formloft/refs/heads/main/Imagem1.png" alt="Logotipo da Empresa" class="logo">
+  <img src="https://raw.githubusercontent.com/acidjx/formulariocontactop2g/main/LOGO-PERFECT2GETHER-SHORT.png" alt="Logotipo da Empresa" class="logo">
 
   <div class="container">
     <h2>Pedido de Contacto</h2>
@@ -99,6 +143,15 @@
       <input type="text" name="nome" placeholder="Seu nome" required>
       <input type="email" name="email" placeholder="Seu email" required>
       <textarea name="mensagem" rows="5" placeholder="Descreva o propósito do seu contacto" required></textarea>
+
+      <div class="consentimento">
+        <input type="checkbox" name="consentimento" required>
+        <span>
+          Autorizo o contacto por parte da empresa e aceito os 
+          <a href="#" target="_blank">Termos e Condições</a>.
+        </span>
+      </div>
+
       <button type="submit">Enviar Pedido</button>
     </form>
 
@@ -111,5 +164,3 @@
 
 </body>
 </html>
-
-
